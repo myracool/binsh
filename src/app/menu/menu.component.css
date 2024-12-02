@@ -1,0 +1,35 @@
+
+.main {
+  padding: 5px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  width: 248px;
+  height: 338px;
+  background: linear-gradient(#cdcdcd, #7e7c7c);
+  position: fixed;
+  bottom: 40px;
+}
+.content{
+  width: 244px;
+  position: fixed;
+  bottom: 43px;
+  left: 60px;
+}
+
+section {
+  padding: 3px;
+  display: flex;
+}
+
+section .text-menu{
+  position: relative;
+  left: 14px;
+  top: 5px;
+
+}
+
+section:hover {
+    background: #15157a;
+    color: white;
+
+}
