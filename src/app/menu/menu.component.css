@@ -1,19 +1,22 @@
 
 .main {
   padding: 5px;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 2px ridge black;
+  border-right: 2px ridge black;
+  border-top: 2px ridge white;
+  border-left: 2px ridge white;
   width: 248px;
-  height: 338px;
-  background: linear-gradient(#cdcdcd, #7e7c7c);
+  height: 337px;
+  background: linear-gradient(#e3e3e3, #dc70ad);
   position: fixed;
-  bottom: 40px;
+  bottom: 33px;
+  left: 10px;
 }
 .content{
   width: 244px;
   position: fixed;
   bottom: 43px;
-  left: 60px;
+  left: 40px;
 }
 
 section {
@@ -25,11 +28,11 @@ section .text-menu{
   position: relative;
   left: 14px;
   top: 5px;
-
 }
 
 section:hover {
     background: #15157a;
     color: white;
+  width: 220px;
 
 }

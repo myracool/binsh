@@ -1,0 +1,37 @@
+.main {
+  /*
+  padding: 5px;
+  */
+  border-bottom: 2px ridge black;
+  border-right: 2px ridge black;
+  border-top: 2px ridge white;
+  border-left: 2px ridge white;
+  width: 98%;
+  height: 30px;
+  background: linear-gradient(#e3e3e3, #dc70ad); /*#b1b1b1*/
+  position: fixed;
+  bottom: 0px;
+}
+
+button {
+  display: flex;
+  background-color: #b1b1b1;
+  border-top: 1mm ridge #e3e3e3;
+  border-left: 1mm ridge #e3e3e3;
+}
+
+
+button .text-start{
+  position: relative;
+  top: 5px;
+  font-size: small;
+  font-weight:bold;
+}
+
+button:active {
+  border: dashed 1px;
+  position: fixed;
+  bottom: 3px;
+  left: 10px;
+}
+

@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 @font-face {
   font-family: 'police';
   src: url('../public/assets/font/ms-sans-serif-1.ttf');
@@ -7,4 +8,9 @@
 * {
   font-family: "police";
   text-align: start;
+  font-size: medium;
+}
+
+body {
+  background-color: hotpink;
 }
