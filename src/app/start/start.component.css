@@ -2,15 +2,16 @@
   /*
   padding: 5px;
   */
-  border-bottom: 2px ridge black;
-  border-right: 2px ridge black;
-  border-top: 2px ridge white;
-  border-left: 2px ridge white;
+  border-bottom: 3px ridge black;
+  border-right: 3px ridge black;
+  border-top: 3px ridge white;
+  border-left: 3px ridge white;
   width: 98%;
   height: 30px;
   background: linear-gradient(#e3e3e3, #dc70ad); /*#b1b1b1*/
+  background: #b1b1b1;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
 }
 
 button {
@@ -29,7 +30,11 @@ button .text-start{
 }
 
 button:active {
-  border: dashed 1px;
+  /*border: dashed 1px;*/
+  border-bottom: 3px ridge white;
+  border-right: 3px ridge white;
+  border-top: 3px ridge black;
+  border-left: 3px ridge black;
   position: fixed;
   bottom: 3px;
   left: 10px;

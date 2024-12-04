@@ -1,22 +1,40 @@
 
 .main {
   padding: 5px;
-  border-bottom: 2px ridge black;
-  border-right: 2px ridge black;
-  border-top: 2px ridge white;
-  border-left: 2px ridge white;
+  border-bottom: 3px ridge black;
+  border-right: 3px ridge black;
+  border-top: 3px ridge white;
+  border-left: 3px ridge white;
   width: 248px;
   height: 337px;
   background: linear-gradient(#e3e3e3, #dc70ad);
   position: fixed;
   bottom: 33px;
-  left: 10px;
+  left: 8px;
 }
-.content{
-  width: 244px;
+
+.content {
   position: fixed;
   bottom: 43px;
-  left: 40px;
+  left: 38px;
+}
+
+.side {
+  transform: rotate(-0.25turn);
+  position: absolute;
+  right: 73px;
+  bottom: 162px;
+  width: 348px;
+  background: linear-gradient(0.25turn, #15157a, #0022ff, #15157a, #15157a, #15157a, #15157a, #15157a);
+
+}
+
+.side .side-text {
+  position: relative;
+  left: 5px;
+  font-family: "Arial Black";
+  font-weight: bolder;
+  color: white;
 }
 
 section {
@@ -24,15 +42,17 @@ section {
   display: flex;
 }
 
-section .text-menu{
+section .text-menu {
   position: relative;
   left: 14px;
-  top: 5px;
+  top: 7px;
+  font-size: small;
 }
 
 section:hover {
-    background: #15157a;
-    color: white;
-  width: 220px;
-
+  background: #15157a;
+  position: relative;
+  right: 6px;
+  color: white;
+  width: 230px;
 }
