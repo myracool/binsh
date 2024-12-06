@@ -9,14 +9,14 @@
   width: 98%;
   height: 30px;
   background: linear-gradient(#e3e3e3, #dc70ad); /*#b1b1b1*/
-  background: #b1b1b1;
+  background: #e3e3e3;
   position: fixed;
   bottom: 0;
 }
 
 button {
   display: flex;
-  background-color: #b1b1b1;
+  background-color: #e3e3e3;
   border-top: 1mm ridge #e3e3e3;
   border-left: 1mm ridge #e3e3e3;
 }
