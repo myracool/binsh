@@ -1,5 +1,6 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {PaintComponent} from '../paint/paint.component';
 
 @Component({
   selector: 'menu',
@@ -8,5 +9,12 @@ import {CommonModule} from '@angular/common';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-  @Input() showMe: boolean | undefined;
+  shouldShowPaint: boolean = false;
+  @Output() paintEvent = new EventEmitter<boolean>();
+
+  togglePaint() {
+    console.log("toto")
+    this.shouldShowPaint = !this.shouldShowPaint;
+    this.paintEvent.emit(this.shouldShowPaint);
+  }
 }

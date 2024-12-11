@@ -1,16 +1,19 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {MenuComponent} from '../menu/menu.component';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'start',
-  imports: [MenuComponent],
+  imports: [CommonModule],
   templateUrl: './start.component.html',
   styleUrl: './start.component.css'
 })
 export class StartComponent {
-  showMenu: boolean = false;
+  shouldShowMenu: boolean = false;
+  @Output() menuEvent = new EventEmitter<boolean>();
 
   toggleMenu() {
-    this.showMenu = !this.showMenu;
+    this.shouldShowMenu = !this.shouldShowMenu;
+    this.menuEvent.emit(this.shouldShowMenu);
   }
 }
