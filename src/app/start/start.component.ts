@@ -1,5 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
-import {MenuComponent} from '../menu/menu.component';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 @Component({
@@ -11,6 +10,7 @@ import {CommonModule} from '@angular/common';
 export class StartComponent {
   shouldShowMenu: boolean = false;
   @Output() menuEvent = new EventEmitter<boolean>();
+  @Input() tasks : Array<string> = [];
 
   toggleMenu() {
     this.shouldShowMenu = !this.shouldShowMenu;

@@ -15,6 +15,7 @@ export class AppComponent {
   title = 'binsh';
   menuIsShown: boolean = false;
   paintIsShown: boolean = false;
+  activeTasks: Array<string> = [];
 
   @HostListener('document:click', ['$event', '$event.target'])
   documentClick(event: MouseEvent, targetElement: HTMLElement) {
@@ -29,5 +30,12 @@ export class AppComponent {
 
   showPaint() {
     this.paintIsShown = !this.paintIsShown;
+    if(this.paintIsShown){
+      this.activeTasks.push("paint");
+    } else {
+      console.log("toto")
+      this.activeTasks = this.activeTasks.filter((task) => task !== "paint");
+      console.log(this.activeTasks)
+    }
   }
 }

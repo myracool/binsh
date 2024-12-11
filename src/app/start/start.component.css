@@ -14,6 +14,12 @@
   bottom: 0;
 }
 
+.tasks {
+  position: absolute;
+  left: 100px;
+  bottom: 10px;
+}
+
 button {
   display: flex;
   background-color: #e3e3e3;

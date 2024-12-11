@@ -14,7 +14,7 @@
 
 
 <router-outlet/>
-<start (menuEvent)="showMenu()"></start>
+<start (menuEvent)="showMenu()" [tasks]=activeTasks></start>
 <div *ngIf="menuIsShown">
   <menu (paintEvent)="showPaint()"></menu>
 </div>

@@ -13,7 +13,6 @@ export class MenuComponent {
   @Output() paintEvent = new EventEmitter<boolean>();
 
   togglePaint() {
-    console.log("toto")
     this.shouldShowPaint = !this.shouldShowPaint;
     this.paintEvent.emit(this.shouldShowPaint);
   }
