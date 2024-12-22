@@ -20,5 +20,5 @@
 </div>
 
 <div *ngIf="paintIsShown">
-  <paint></paint>
+  <paint (paintClosed)= "closeWindow('paint')"></paint>
 </div>

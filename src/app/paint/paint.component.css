@@ -1,3 +1,7 @@
+.main {
+  position: fixed;
+  left: 2%;
+}
 
 .interface {
   width: 800px;
@@ -5,19 +9,37 @@
   border-right: 3px ridge black;
   border-top: 3px ridge white;
   border-left: 3px ridge white;
+  z-index: 0;
 }
 
 
+.meme {
+  width: 715px;
+  height: 410px;
+  z-index: -1;
+  position: absolute;
+  bottom: 19%;
+  left: 10%;
+  image-rendering: pixelated;
+}
+
 .paint_header {
   position: relative;
-  top: 25px;
-  width: 800px;
+  top: 28px;
+  left: 3px;
+  width: 797px;
   background: linear-gradient(0.25turn, #15157a, #0022ff, #15157a, #15157a, #15157a, #15157a, #15157a);
-
+  
 }
 
 .paint_header .paint_header_text {
   font-family: "Arial Black";
   font-weight: bolder;
   color: white;
+}
+
+.close_window {
+  position: relative;
+  left: 92%;
+  border : 2px solid black;
 }

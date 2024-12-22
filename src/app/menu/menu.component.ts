@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {PaintComponent} from '../paint/paint.component';
 
@@ -14,6 +14,6 @@ export class MenuComponent {
 
   togglePaint() {
     this.shouldShowPaint = !this.shouldShowPaint;
-    this.paintEvent.emit(this.shouldShowPaint);
+    this.paintEvent.emit(this.shouldShowPaint); 
   }
 }

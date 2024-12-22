@@ -5,5 +5,9 @@
       <span class = "text-start">Start</span>
     </button>
   </div>
+  <div class="vl" *ngIf="tasks.length > 0"></div>
+  <div class="vl2" *ngIf="tasks.length > 0"></div>
+
 </footer>
+
 <div class="tasks" *ngFor="let task of tasks">{{task}}</div>

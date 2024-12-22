@@ -16,8 +16,16 @@
 
 .tasks {
   position: absolute;
-  left: 100px;
-  bottom: 10px;
+  left: 115px;
+  bottom: 3px;
+  border-top: 2px ridge black;
+  border-left: 2px ridge black;
+
+  border-bottom: 2px ridge white;
+  border-right: 2px ridge white;
+  width:4%;
+  height: 3%;
+  text-align: center;
 }
 
 button {
@@ -46,3 +54,18 @@ button:active {
   left: 10px;
 }
 
+.vl {
+  border-left: 1px ridge black;
+  position: absolute;
+  left: 85px;
+  height: 25px;
+  bottom: 3px;
+}
+
+.vl2 {
+  border-left: 2px ridge black;
+  position: absolute;
+  left: 90px;
+  height: 20px;
+  bottom: 5px;
+}

@@ -17,6 +17,9 @@ export class AppComponent {
   paintIsShown: boolean = false;
   activeTasks: Array<string> = [];
 
+  // TODO: 
+  // faire un enum pour les noms des app (paint etc) ou trouver mieux pour generaliser le bouton close
+
   @HostListener('document:click', ['$event', '$event.target'])
   documentClick(event: MouseEvent, targetElement: HTMLElement) {
     if (targetElement.className !== "start-button") {
@@ -29,13 +32,19 @@ export class AppComponent {
   }
 
   showPaint() {
-    this.paintIsShown = !this.paintIsShown;
-    if(this.paintIsShown){
-      this.activeTasks.push("paint");
-    } else {
-      console.log("toto")
-      this.activeTasks = this.activeTasks.filter((task) => task !== "paint");
-      console.log(this.activeTasks)
-    }
+    this.paintIsShown = true;
+    this.activeTasks.push("paint");
   }
+
+  closeWindow(name: string) {
+    if(name === "paint") { // TODO: remplacer par un switch case sur l'enum ?
+      this.paintIsShown = false;
+    }
+    this.removeActiveTask(name)
+  }
+
+  removeActiveTask(name: string){
+    this.activeTasks = this.activeTasks.filter((task) => task !== name);
+  }
+    
 }
