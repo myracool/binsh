@@ -19,6 +19,6 @@ export class PaintComponent {
 
   getMeme(){
   let meme_num = Math.floor(Math.random() * this.memes_size) + 1;
-  return `${this.image_folder}${meme_num}.jpeg`;
+  return `${this.image_folder}${meme_num}.png`;
   }
 }
